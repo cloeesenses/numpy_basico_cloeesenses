@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "318bdf83-7d5e-4678-a93e-aec7c2ca97f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Media: 3.75\n",
+      "Valor máximo: 8.0\n",
+      "Valor mínimo: -1.0\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([ 1., -1.,  5.])"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "arr2 = np.array([\n",
+    "    [1., 2., 3., 4.],\n",
+    "    [3., -1., 1., 6.],\n",
+    "    [5., 6., 7., 8.]\n",
+    "])\n",
+    "print(\"Media:\", arr2.mean())\n",
+    "print(\"Valor máximo:\", arr2.max())\n",
+    "print(\"Valor mínimo:\", arr2.min())\n",
+    "\n",
+    "#Mínimos por filas y columnas\n",
+    "np.amin(arr2, axis=0)  # mínimos por columna\n",
+    "np.amin(arr2, axis=1)  # mínimos por fila\n",
+    "\n",
+    "#Si usaremos AXIS usamos funciones:\n",
+    "#np.amin()\n",
+    "#np.amax()\n",
+    "#np.mean()\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1dd42919-5143-4737-9b50-120fb1541753",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
